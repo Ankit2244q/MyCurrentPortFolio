@@ -1,0 +1,411 @@
+*{
+    margin: 0px;
+    padding:  0px;
+    background-color: black;
+}
+.nav-title{
+
+    font-size: xx-large;
+    display: flex;
+     justify-content: center;
+   color: white;
+    
+}
+ .nav-title{
+    text-shadow: 10px 6px 8.5px  rgb(87, 87, 216);
+}
+.menu-bar-container{
+    
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+     flex-wrap: wrap;
+      
+}
+.menu-bar-container div {
+    flex-wrap: wrap;
+
+}
+
+.Moon-body{
+ display:inline-block;
+ margin-top: 70px;
+ padding: 50px;
+ padding-right: 85px;
+ height: 35px;
+ border-radius: 50%;
+ background: linear-gradient(rgb(19, 8, 8), rgba(255, 255, 255, 0.681));
+ box-shadow: 0px 0px 84px rgba(100, 156, 181, 0.947) ;
+ animation: moon  4s linear ;
+ 
+}
+
+@keyframes moon {
+   0%{
+       transform:translate( 500px );
+   }
+
+}
+
+.Name-animation span{
+    display: inline-block;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    letter-spacing: 30px;
+    margin-top: 40px;
+    text-align: center;
+    color: whitesmoke;
+    
+}
+
+span {
+    animation: span1 4s linear ;
+}
+@keyframes span1 {
+ 0%{
+     transform: translate(-300px);
+ }
+ 50% {
+     transform: rotate(180deg);
+ }
+}
+
+
+.school-card{
+    display: flex;
+    color: white;
+    margin-top: 7rem;
+   
+    height: 400px;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    
+}
+.school{
+
+   display: inline-block;
+    width: 300px;
+    background: linear-gradient(rgb(19, 8, 8), rgba(255, 255, 255, 0.681));
+  padding: 50px 50px 50px 50px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 0px 84px rgba(100, 156, 181, 0.947) 
+}
+
+.university{
+    display: inline-block;
+    background: linear-gradient(rgb(19, 8, 8), rgba(255, 255, 255, 0.681));
+    width: 300px;
+  padding: 50px 50px 50px 50px;
+  overflow: hidden;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 84px rgba(100, 156, 181, 0.947) 
+}
+
+.line-animation {
+    
+     border: solid 1px;
+     background:linear-gradient(to right, black , blue);
+     animation: line 10s linear ;
+     
+   
+      
+}
+@keyframes line {
+    0%{
+
+         transform: translate(-100%);
+         
+    }
+    100%{
+        transform: translate(100%);
+    }
+
+}
+
+.line-animation2 {
+    
+  border: solid 1px;
+    background:linear-gradient(to right, black , blue);
+    animation: line2 10s linear ;    
+}
+@keyframes line2 {
+   0%{
+
+        transform: translate(100%);
+        
+   } 
+
+}
+
+.School-card-heading{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    background: none;
+    font-weight: 700; 
+ 
+
+}
+.university-card-heading{
+    font-family: Arial;
+    font-size: 30px;
+    background: none;
+    font-weight: 700; 
+    color: aqua;
+}
+.about-me-text {
+    font-family: Arial,;
+    background: none;
+    text-decoration: none;
+    color: rgb(239, 216, 216);
+    margin-top: 20px;
+    font-size: 25px;
+    overflow: hidden;
+}
+.about-me-text:hover{
+    transition: 1s ease-in;
+    background-color: rgb(40, 174, 192);
+    border-radius: 8px;
+   
+}
+.progress{
+         
+         width: 310px;
+        height: 19px;
+        background: darkgrey;
+        border-radius: 5px;
+        overflow: hidden;
+        
+        margin-top: 50px;
+}
+.progress__fill{
+    display: flex;
+    width: 70%;
+    height:  100%;
+    background:linear-gradient(rgb(19, 8, 8), rgba(255, 255, 255, 0.681));
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(39, 224, 230);
+    font-weight: 900;
+}
+.progress__text{
+   color: black;                                                                                                                                                  
+    right:  5px;
+     display: flex;
+    font: bold 14px 'Quicksand' , sans-serif;
+}
+.sun{
+   
+    color: aliceblue;
+    position: relative;
+    top: 120px;
+    background: yellow;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 20px 20px 20px 20px;
+    box-shadow: 0px 0px 60px yellow;
+    animation: sun 7s linear ;
+}
+
+@keyframes sun {
+    
+    0%{
+         
+         right: 50%;
+    }
+    40%{
+      
+       right: 10%;
+    }
+    50%{
+        
+        right: 50%;
+    }
+    100%{
+    
+    right: 50%;
+    }
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #225acb;
+    background-image: linear-gradient(90 deg, #62ccdc 0%, #9face6 100%);
+}
+.box{
+
+    width: 300px;
+    height: 375px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    padding-top: 80px;
+    margin: 20px;
+    margin-top: 100px;
+    text-align: center;
+    letter-spacing: 1px;
+    box-shadow: 0px 3px 5px rgba(0, 0,0, 0.3);
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+.box h3{
+    font-size: 35px;
+    padding: 20px 20px 0;
+    color: #444;
+}
+.box p {
+    font-size: 15px;
+    color: #777;
+
+}
+
+.box button{
+    width:  140px;
+    height: 40px ;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-top: 40px;
+}
+
+.box button:hover{
+    letter-spacing: 2px;
+    opacity: 0.8;
+    
+}
+.box::before{
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.box::after{
+    width: 100%;
+    height: 100%;
+    background:#fbda61;
+    background-image: linear-gradient(45deg,#f8da61 0% , #ff5acd 100%);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    clip-path: circle(20% at 90% 10%);
+    transition: .2s;
+}
+.box .count{
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    font-size: 40px;
+    font-weight: bolder;color: #fff;    
+}
+
+.box:nth-child(2):after{
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093e9 0%, aqua 100%);
+}
+.box:nth-child(3):after{
+    background-color: #0093E9;
+    background-image: linear-gradient(0deg, #0093e9 0%, rgb(27, 41, 166) 100%);
+}
+.box:hover::after{
+    clip-path: circle(100%);
+
+}
+.box:hover h3{
+    color: #fff;
+}
+.box:hover p{
+    color: #fff;
+}
+
+.box:hover button{
+    color: #333;
+    background-color: #fff;
+}
+
+.download-resume{
+    display: flex;
+ justify-content: center;
+ background: linear-gradient(blue black);
+}
+.download-btn{
+    color: white;
+    
+    justify-content: center;
+    border: 1px solid white;
+    height: 20px;
+    padding: 20px;
+    width: 70px;
+    letter-spacing: 2px;
+    list-style: none;
+    text-decoration: none;
+    padding: 10px 50px 25px 50px;
+    background: #225acb;
+    outline: 0;
+  }
+  
+  footer{
+    position: relative;
+    width: 100%;
+    display: flex;
+    background-color: blue;
+    min-height: 100px;
+    padding: 20px 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: none;
+ 
+}
+footer .social-icon li  {
+   
+    
+    list-style: none;
+    background: none;
+}
+footer .social-icon li a {
+   font-size: 2rem;
+   color: white;
+   margin: 0 10px;
+   display: inline-block;
+   transition: 0.5s;
+   background: none;
+
+
+}
+
+footer .social-icon li a:hover {
+   transform: translateY(-10px);
+
+}
+
+footer .social-icon ,footer .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10% 10%;
+    flex: wrap;
+    background: none;
+    list-style: none;
+}
